@@ -1,8 +1,1 @@
-@"
-gradio
-fastapi
-uvicorn
-python-multipart
-pydantic>=2
-"@ | Out-File -Encoding ascii requirements.txt
-type requirements.txt
+streamlit
