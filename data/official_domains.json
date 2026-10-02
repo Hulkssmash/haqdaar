@@ -1,0 +1,5 @@
+{
+  "_readme": "Allowlist of official government domains. Verify each entry yourself before publishing. A link is 'official' if its host equals an entry or is a true subdomain of it.",
+  "last_checked": null,
+  "domains": ["punjab.gov.pk", "bisp.gov.pk"]
+}

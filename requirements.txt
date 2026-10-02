@@ -1,0 +1,5 @@
+gradio>=4.44gradio
+fastapi
+uvicorn
+python-multipart
+pydantic>=2

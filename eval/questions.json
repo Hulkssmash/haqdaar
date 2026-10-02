@@ -1,0 +1,5 @@
+[
+  {"q": "Who can apply for the Asaan Karobar Card?", "expect_any": ["21", "57", "Punjab"], "expect_grounded": true},
+  {"q": "What documents do I need for PSER registration?", "expect_any": ["CNIC"], "expect_grounded": true},
+  {"q": "What is the best pizza in Lahore?", "expect_any": [], "expect_grounded": false}
+]
