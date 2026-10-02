@@ -11,15 +11,14 @@ def status(profile, scheme_id):
 
 
 # --- eligibility engine
-assert status({"province": "punjab", "age": 30, "occupation": "has_business"}, "asaan_karobar_card") == "likely"
-assert status({"province": "punjab", "age": 20, "occupation": "has_business"}, "asaan_karobar_card") == "not_eligible"
-assert status({"province": "punjab", "age": 58, "occupation": "has_business"}, "asaan_karobar_card") == "not_eligible"
-assert status({"province": "sindh", "age": 30, "occupation": "has_business"}, "asaan_karobar_card") == "not_eligible"
-assert status({"province": "punjab", "occupation": "has_business"}, "asaan_karobar_card") == "need_more_info"
-assert status({"province": "punjab", "age": 30, "occupation": "student"}, "asaan_karobar_card") == "not_eligible"
-assert status({"province": "punjab"}, "pser") == "likely_needs_assessment"
-assert status({"province": "sindh"}, "pser") == "not_eligible"
-assert status({}, "pser") == "need_more_info"
+A = "apni_chhat_apna_ghar"
+assert status({"province": "punjab", "age": 30}, A) == "likely_needs_assessment"
+assert status({"province": "punjab", "age": 20}, A) == "not_eligible"
+assert status({"province": "punjab", "age": 61}, A) == "not_eligible"
+assert status({"province": "sindh", "age": 30}, A) == "not_eligible"
+assert status({"province": "punjab"}, A) == "need_more_info"
+assert status({}, "apni_chhat_mehfooz_chhat") == "need_more_info"
+assert all(r["other_criteria"] for r in engine.evaluate({"province": "punjab", "age": 30}, RULES))
 
 # --- link check
 dom = {"domains": ["punjab.gov.pk"]}

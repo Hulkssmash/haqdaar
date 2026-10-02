@@ -11,7 +11,7 @@ DATA_DIR = Path(__file__).parent / "data"
 STATUS_ORDER = {"likely": 0, "likely_needs_assessment": 1, "need_more_info": 2, "not_eligible": 3}
 STATUS_LABELS = {
     "likely": "Likely eligible / غالباً اہل",
-    "likely_needs_assessment": "Likely can register; official assessment decides / رجسٹریشن ممکن، حتمی فیصلہ سرکاری جائزے پر",
+    "likely_needs_assessment": "Passes the basic checks; the official office decides / بنیادی شرائط پوری، حتمی فیصلہ سرکاری ادارے کا",
     "need_more_info": "Need more information / مزید معلومات درکار",
     "not_eligible": "Does not seem to match / شرائط پوری نہیں ہوتیں",
 }

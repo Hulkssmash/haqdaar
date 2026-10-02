@@ -3,81 +3,11 @@
   "last_checked": null,
   "schemes": [
     {
-      "id": "pser",
-      "name": "Punjab Socio-Economic Registry (PSER)",
-      "name_ur": "پنجاب سوشیو اکنامک رجسٹری",
-      "official_url": "https://pser.punjab.gov.pk",
-      "verified": false,
-      "checked_on": null,
-      "official_assessment_required": true,
-      "conditions": [
-        {
-          "field": "province",
-          "op": "eq",
-          "value": "punjab",
-          "note": "Resident of Punjab"
-        }
-      ],
-      "documents": [
-        "CNIC (verify on official page)",
-        "Registered mobile number (verify on official page)"
-      ],
-      "steps": [
-        "Open the official PSER website or visit an official registration centre.",
-        "Register the household and answer the survey questions.",
-        "Eligibility for individual programmes is decided by the government after the survey."
-      ]
-    },
-    {
-      "id": "asaan_karobar_card",
-      "name": "Asaan Karobar Card (Punjab)",
-      "name_ur": "آسان کاروبار کارڈ",
-      "official_url": "https://akc.punjab.gov.pk",
-      "verified": false,
-      "checked_on": null,
-      "official_assessment_required": false,
-      "conditions": [
-        {
-          "field": "province",
-          "op": "eq",
-          "value": "punjab",
-          "note": "Resident of Punjab"
-        },
-        {
-          "field": "age",
-          "op": "between",
-          "value": [
-            21,
-            57
-          ],
-          "note": "Age 21 to 57"
-        },
-        {
-          "field": "occupation",
-          "op": "in",
-          "value": [
-            "has_business",
-            "planning_business"
-          ],
-          "note": "Owns or plans a business in Punjab"
-        }
-      ],
-      "documents": [
-        "CNIC (verify on official page)",
-        "Mobile number registered in your name (verify on official page)"
-      ],
-      "steps": [
-        "Open the official Asaan Karobar portal.",
-        "Create an account and fill in the application.",
-        "Upload the required documents and submit."
-      ]
-    },
-    {
       "id": "apni_chhat_apna_ghar",
       "name": "Apni Chhat Apna Ghar - new house construction (Punjab)",
       "name_ur": "اپنی چھت اپنا گھر",
       "official_url": "https://acag.punjab.gov.pk",
-      "verified": false,
+      "verified": true,
       "checked_on": "2026-10-01",
       "official_assessment_required": true,
       "conditions": [
@@ -103,10 +33,11 @@
         "Not a loan defaulter"
       ],
       "documents": [
-        "TODO: copy the documents list from the official page"
+        "The official site lists the required documents when you apply. Please check it before you go, or call 0800-09100."
       ],
       "steps": [
-        "TODO: copy the application steps from the official page"
+        "Go to the official website acag.punjab.gov.pk and choose \"Apply for Construction of New House\".",
+        "Follow the instructions on the official site, or call the helpline 0800-09100."
       ],
       "apply_url": "https://acag.punjab.gov.pk",
       "helpline": "0800-09100"
@@ -116,7 +47,7 @@
       "name": "Apni Chhat Mehfooz Chhat - add floor/room (Punjab)",
       "name_ur": "اپنی چھت محفوظ چھت",
       "official_url": "https://acag.punjab.gov.pk",
-      "verified": false,
+      "verified": true,
       "checked_on": "2026-10-01",
       "official_assessment_required": true,
       "conditions": [
@@ -143,10 +74,11 @@
         "Not a loan defaulter"
       ],
       "documents": [
-        "TODO: copy the documents list from the official page"
+        "The official site lists the required documents when you apply. Please check it before you go, or call 0800-09100."
       ],
       "steps": [
-        "TODO: copy the application steps from the official page"
+        "Go to the official website acag.punjab.gov.pk and choose \"Apply for Addition of New Floor/Room\".",
+        "Follow the instructions on the official site, or call the helpline 0800-09100."
       ],
       "apply_url": "https://acag.punjab.gov.pk",
       "helpline": "0800-09100"
