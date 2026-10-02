@@ -1,5 +1,8 @@
-gradio>=4.44gradio
+@"
+gradio
 fastapi
 uvicorn
 python-multipart
 pydantic>=2
+"@ | Out-File -Encoding ascii requirements.txt
+type requirements.txt
